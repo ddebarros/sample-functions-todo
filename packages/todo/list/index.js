@@ -1,4 +1,4 @@
-const { connect } = require('./lib/mongodb-client');
+const connect = require('./mongodb-client');
 
 exports.main = async function main(args) {
   const userId = args.__ow_headers['x-user-id'];
