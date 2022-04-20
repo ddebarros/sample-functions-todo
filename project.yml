@@ -1,0 +1,7 @@
+environment:
+  CA_CERT: ${CA_CERT}
+  HOSTNAME: "${HOSTNAME}"
+  PORT: "${PORT}"
+  USERNAME: "${USERNAME}"
+  PASSWORD: "${PASSWORD}"
+  DATABASE: "${DATABASE}"
