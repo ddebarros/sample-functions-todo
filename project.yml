@@ -1,6 +1,6 @@
 environment:
   CA_CERT: $(CA_CERT)
-  HOSTNAME: "${HOSTNAME}"
+  DB_HOSTNAME: "${DB_HOSTNAME}"
   PORT: "${PORT}"
   USERNAME: "${USERNAME}"
   PASSWORD: "${PASSWORD}"
