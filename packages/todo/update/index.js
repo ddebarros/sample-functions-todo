@@ -11,10 +11,6 @@ exports.main = async function main(args) {
     throw new Error ('id is missing')
   }
 
-  if (!args.content) {
-    throw new Error('content is missing')
-  } 
-
   const client = await connect();
   const db = await client.db(process.env.DB_DATABASE);
   const tasksCollection = await db.collection('todotasks');
@@ -26,7 +22,7 @@ exports.main = async function main(args) {
     },
     {
       $set: {
-        content: args.content ?? '',
+        content: args.content,
         done: args.done,
       }
     },
